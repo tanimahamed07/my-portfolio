@@ -8,7 +8,7 @@ const Contact = () => {
   const whatsappNumber = "+8801885124569"; // Using the number from your resume
 
   return (
-   <section id="contact" className="border">
+   <section id="contact" className="">
   <div className="container mx-auto px-5">
     {/* Section Title */}
     <div className="text-center mb-6">
@@ -16,9 +16,9 @@ const Contact = () => {
       <span className="text-gray-500">Contact Me</span>
     </div>
 
-    <div className="flex flex-col lg:flex-row justify-center border gap-12">
+    <div className="flex flex-col lg:flex-row justify-center gap-12">
       {/* Left Side: Contact Options (Cards) */}
-      <div className="w-full lg:w-1/3 flex flex-col gap-6 px-6">
+      <div className="w-full lg:w-1/3 flex flex-col gap-6 lg:px-6">
         <p className="text-lg font-semibold text-center text-gray-700">
           Talk to me
         </p>
@@ -68,7 +68,7 @@ const Contact = () => {
       </div>
 
       {/* Right Side: Contact Form */}
-      <div className="w-full lg:w-1/2 px-6 py-8 rounded-xl">
+      <div className="w-full lg:w-1/2 py-8 rounded-xl lg:px-6">
         <p className="text-lg font-semibold text-gray-700 mb-6 text-center lg:text-left">
           Write me your project
         </p>

@@ -12,7 +12,7 @@ import image2 from "../../assets/Untitled_design-removebg-preview.png";
 
 const banner = () => {
   return (
-    <div className="lg:pt-20 pb-12 sm:pt-12 sm:pb-[50px] overflow-x-hidden bg-[#FAFAFA]">
+    <div id='home' className="lg:pt-20 pb-12 sm:pt-12 sm:pb-[50px] overflow-x-hidden bg-[#FAFAFA]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
           {/* Social Icons - Mobile: Bottom, Desktop: Left */}
@@ -122,7 +122,7 @@ const banner = () => {
       {/* Scroll Down Indicator */}
       <div className="pt-12 sm:pt-20 flex items-center justify-center lg:justify-start lg:pl-[120px] text-gray-500 text-sm font-medium animate-bounce cursor-pointer">
         <BsMouse className="text-2xl sm:text-4xl mr-2" /> Scroll Down
-      </div>
+    </div>
     </div>
   );
 };

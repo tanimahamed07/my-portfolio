@@ -4,6 +4,6 @@ import Root from "../layout/Root";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
+    element: <Root></Root>
   },
 ]);
