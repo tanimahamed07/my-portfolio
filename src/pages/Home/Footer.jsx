@@ -1,13 +1,13 @@
 import React from "react";
-import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer = () => {
   const socialLinks = [
     {
-      Icon: FaTwitter,
-      href: "https://twitter.com",
-      hoverColor: "hover:bg-black",
+      Icon: FaFacebookF,
+      href: "https://www.facebook.com/tanim.123888",
+      hoverColor: "hover:bg-[#1877f2]",
     },
     {
       Icon: FaLinkedinIn,

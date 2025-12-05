@@ -88,27 +88,26 @@ const Contact = () => {
                 external: true,
               },
             ].map((item, index) => (
-              <motion.div
+              <motion.a
                 key={index}
-                className="card bg-white py-4 px-6 rounded-xl shadow-sm text-center border border-gray-200"
+                href={item.link}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
+                className="card bg-white py-4 px-6 rounded-xl shadow-sm text-center border border-gray-200 cursor-pointer hover:shadow-lg transition-shadow block"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}
+                whileHover={{ y: -5 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <item.Icon className="mx-auto text-3xl text-gray-600 mb-1" />
                 <h4 className="font-bold text-gray-800">{item.title}</h4>
                 <p className="text-sm text-gray-500 mb-1">{item.value}</p>
-                <a
-                  href={item.link}
-                  target={item.external ? "_blank" : undefined}
-                  rel={item.external ? "noopener noreferrer" : undefined}
-                  className="text-sm text-blue-500 hover:underline font-medium"
-                >
+                <span className="text-sm text-blue-500 font-medium">
                   Write me →
-                </a>
-              </motion.div>
+                </span>
+              </motion.a>
             ))}
           </motion.div>
 

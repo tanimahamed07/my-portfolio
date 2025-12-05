@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import {
   FaLinkedinIn,
-  FaTwitter,
+  FaFacebookF,
   FaGithub,
   FaTelegramPlane,
 } from "react-icons/fa";
@@ -60,10 +60,19 @@ const Banner = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {[FaLinkedinIn, FaTwitter, FaGithub].map((Icon, index) => (
+            {[
+              { Icon: FaLinkedinIn, href: "#" },
+              {
+                Icon: FaFacebookF,
+                href: "https://www.facebook.com/tanim.123888",
+              },
+              { Icon: FaGithub, href: "#" },
+            ].map((item, index) => (
               <motion.a
                 key={index}
-                href="#"
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-black hover:-translate-y-1 transition-all duration-300 bg-white p-4 sm:p-3 rounded-full shadow-sm border border-gray-100 lg:border-none lg:shadow-none lg:bg-transparent"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -71,7 +80,7 @@ const Banner = () => {
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Icon />
+                <item.Icon />
               </motion.a>
             ))}
           </motion.div>
