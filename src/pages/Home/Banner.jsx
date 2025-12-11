@@ -61,12 +61,12 @@ const Banner = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {[
-              { Icon: FaLinkedinIn, href: "#" },
+              { Icon: FaLinkedinIn, href: "https://www.linkedin.com/in/tanim-ahamed/" },
               {
                 Icon: FaFacebookF,
                 href: "https://www.facebook.com/tanim.123888",
               },
-              { Icon: FaGithub, href: "#" },
+              { Icon: FaGithub, href: "https://github.com/tanimahamed07" },
             ].map((item, index) => (
               <motion.a
                 key={index}
