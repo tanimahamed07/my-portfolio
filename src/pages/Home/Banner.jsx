@@ -11,7 +11,7 @@ import { AiOutlineFire } from "react-icons/ai";
 import { motion } from "framer-motion"; // eslint-disable-line
 import { gsap } from "gsap";
 import { Link } from "react-scroll";
-import image2 from "../../assets/Untitled_design-removebg-preview.png";
+import image2 from '../../assets/Untitled_design-removebg-preview.png'
 
 const Banner = () => {
   const imageRef = useRef(null);
@@ -211,7 +211,7 @@ const Banner = () => {
             rounded-tl-[100px] rounded-tr-[70px] rounded-br-[100px] rounded-bl-[70px] mx-auto"
               >
                 <img
-                  src={image2} // নিশ্চিত করুন image2 আপনার কোডে ইম্পোর্ট করা আছে
+                  src={image2}
                   alt="Tanim Ahamed"
                   className="w-full h-full object-cover"
                 />

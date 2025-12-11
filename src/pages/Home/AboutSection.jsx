@@ -133,7 +133,7 @@ const About = () => {
 
             {/* Download Button */}
             <motion.a
-              href="https://drive.google.com/file/d/1pq4QJlY8F4J5uvy76ml4TEfp7YupLgUr/view?usp=sharing"
+              href="https://drive.google.com/file/d/1UTW9cQtVHxuYUv4kA7NSw5sGSVid8KZk/view?usp=drive_link"
               download="Tanim_Ahamed_Resume"
               className="btn btn-neutral text-white px-5 sm:px-6 py-3 sm:py-4 rounded-xl flex items-center gap-2 w-fit text-sm sm:text-base mx-auto md:mx-0"
               initial={{ opacity: 0, scale: 0.9 }}
