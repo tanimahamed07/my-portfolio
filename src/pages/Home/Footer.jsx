@@ -11,12 +11,12 @@ const Footer = () => {
     },
     {
       Icon: FaLinkedinIn,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/tanim-ahamed/",
       hoverColor: "hover:bg-[#0077b5]",
     },
     {
       Icon: FaGithub,
-      href: "https://github.com",
+      href: "https://github.com/tanimahamed07",
       hoverColor: "hover:bg-black",
     },
   ];
