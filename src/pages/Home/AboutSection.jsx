@@ -34,10 +34,10 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-12 sm:py-16 lg:py-20" ref={sectionRef}>
+    <section id="about" className="py-8 sm:py-10 lg:py-12" ref={sectionRef}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-8 sm:mb-10 lg:mb-12"
+          className="text-center mb-6 sm:mb-8 lg:mb-10"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -52,7 +52,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-10 lg:gap-12"
+          className="flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -79,7 +79,7 @@ const About = () => {
           >
             {/* Stats Grid */}
             <motion.div
-              className="grid grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8"
+              className="grid grid-cols-3 gap-3 sm:gap-4 mb-5 sm:mb-6"
               variants={containerVariants}
             >
               {[
@@ -113,7 +113,7 @@ const About = () => {
 
             {/* Description Text */}
             <motion.p
-              className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed text-justify"
+              className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6 leading-relaxed text-justify"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -122,9 +122,9 @@ const About = () => {
               I am a <strong>Frontend Focused MERN Stack Developer</strong>{" "}
               skilled in building responsive and user-friendly web applications.
               Proficient in
-              <strong> React.js, Next.js, and Tailwind CSS</strong>, I also have
+              <strong> React.js, Next.js, TypeScript and Tailwind CSS</strong>, I also have
               solid experience with backend technologies like{" "}
-              <strong>Node.js, Express.js, and MongoDB</strong>.
+              <strong>Node.js, Express.js, MongoDB and Mongoose</strong>.
               <br />
               <br />I am looking for a dynamic team where I can contribute to
               real-world projects, improve my skills, and grow as a full-stack
@@ -133,8 +133,9 @@ const About = () => {
 
             {/* Download Button */}
             <motion.a
-              href="https://drive.google.com/file/d/1UTW9cQtVHxuYUv4kA7NSw5sGSVid8KZk/view?usp=drive_link"
-              download="Tanim_Ahamed_Resume"
+              href="https://drive.google.com/file/d/1_dSCAdxeycb9jxv5ZHneF_djwIuNka1w/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-neutral text-white px-5 sm:px-6 py-3 sm:py-4 rounded-xl flex items-center gap-2 w-fit text-sm sm:text-base mx-auto md:mx-0"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}

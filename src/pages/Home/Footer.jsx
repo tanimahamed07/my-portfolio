@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="footer flex flex-col footer-center bg-white text-base-content p-10 mt-10 w-full z-50 backdrop-blur-md border-t border-gray-200/50 transition-all duration-300"
+      className="footer flex flex-col footer-center bg-white text-base-content p-8 mt-8 w-full z-50 backdrop-blur-md border-t border-gray-200/50 transition-all duration-300"
     >
       {/* Social Icons Section */}
       <nav>

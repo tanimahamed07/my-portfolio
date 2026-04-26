@@ -36,11 +36,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-12 sm:py-16 lg:py-20">
+    <section id="contact" className="py-8 sm:py-10 lg:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.div
-          className="text-center mb-8 sm:mb-10 lg:mb-12"
+          className="text-center mb-6 sm:mb-8 lg:mb-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -52,10 +52,10 @@ const Contact = () => {
           <span className="text-sm sm:text-base text-gray-500">Contact Me</span>
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row justify-center gap-12">
+        <div className="flex flex-col lg:flex-row justify-center gap-8">
           {/* Left Side: Contact Options */}
           <motion.div
-            className="w-full lg:w-1/3 flex flex-col gap-6 lg:px-6"
+            className="w-full lg:w-1/3 flex flex-col gap-5 lg:px-6"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -119,11 +119,11 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-6 text-center lg:text-left">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-5 text-center lg:text-left">
               Write me your project
             </h3>
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

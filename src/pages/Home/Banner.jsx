@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   FaLinkedinIn,
   FaFacebookF,
@@ -6,9 +6,9 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs";
-import { BiBriefcase, BiCodeAlt } from "react-icons/bi";
+import { BiCodeAlt } from "react-icons/bi";
 import { AiOutlineFire } from "react-icons/ai";
-import { motion } from "framer-motion"; // eslint-disable-line
+import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { Link } from "react-scroll";
 
@@ -45,6 +45,19 @@ const Banner = () => {
       });
     }
   }, []);
+
+  const socialLinks = [
+    {
+      Icon: FaLinkedinIn,
+      href: "https://www.linkedin.com/in/tanim-ahamed/",
+    },
+    {
+      Icon: FaFacebookF,
+      href: "https://www.facebook.com/tanim.123888",
+    },
+    { Icon: FaGithub, href: "https://github.com/tanimahamed07" },
+  ];
+
   return (
     <div
       id="home"
@@ -54,22 +67,12 @@ const Banner = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center overflow-visible">
           {/* Social Icons - Mobile: Bottom, Desktop: Left */}
           <motion.div
-            className="flex lg:flex-col gap-6 items-center justify-center lg:justify-start lg:col-span-1 text-2xl sm:text-xl text-gray-700 order-3 lg:order-none mt-6 lg:mt-0"
+            className="flex lg:flex-col gap-6 items-center justify-center lg:justify-start lg:col-span-1 text-2xl sm:text-xl text-gray-700 order-3 lg:order-0 mt-6 lg:mt-0"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {[
-              {
-                Icon: FaLinkedinIn,
-                href: "https://www.linkedin.com/in/tanim-ahamed/",
-              },
-              {
-                Icon: FaFacebookF,
-                href: "https://www.facebook.com/tanim.123888",
-              },
-              { Icon: FaGithub, href: "https://github.com/tanimahamed07" },
-            ].map((item, index) => (
+            {socialLinks.map((item, index) => (
               <motion.a
                 key={index}
                 href={item.href}
@@ -88,7 +91,7 @@ const Banner = () => {
           </motion.div>
 
           {/* Text Content */}
-          <div className="lg:col-span-5 text-center lg:text-left order-2 lg:order-none pt-6 lg:pt-0">
+          <div className="lg:col-span-5 text-center lg:text-left order-2 lg:order-0 pt-6 lg:pt-0">
             <motion.h3
               className="text-xl sm:text-xl font-semibold text-gray-800 flex items-center justify-center lg:justify-start gap-2"
               initial={{ opacity: 0, y: 20 }}
@@ -204,12 +207,11 @@ const Banner = () => {
           </div>
 
           {/* Image Section */}
-          <div className="lg:col-span-6 relative flex justify-center lg:justify-end items-start order-1 lg:order-none pt-0 lg:-mt-8 overflow-visible">
+          <div className="lg:col-span-6 relative flex justify-center lg:justify-end items-start order-1 lg:order-0 pt-0 lg:-mt-8 overflow-visible">
             <div className="relative z-10 scale-[0.85] sm:scale-90 lg:scale-100 overflow-visible">
               {/* Main Image Frame */}
               <motion.div
-                className="w-[320px] h-[320px] sm:w-[400px] sm:h-[400px] overflow-hidden 
-      border-4 border-white shadow-2xl bg-gray-200 mx-auto"
+                className="w-[320px] h-[320px] sm:w-[400px] sm:h-[400px] overflow-hidden border-4 border-white shadow-2xl bg-gray-200 mx-auto"
                 animate={{
                   borderRadius: [
                     "100px 70px 100px 70px",
