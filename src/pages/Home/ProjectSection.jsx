@@ -84,9 +84,9 @@ export default function ProjectSection() {
         "Shadcn",
         "Gemini AI",
       ],
-      liveLink: "https://techland-client.vercel.app/",
-      githubClient: "https://github.com/tanimahamed07/techland-client",
-      githubServer: "https://github.com/tanimahamed07/techland-server",
+      liveLink: "https://techland-orpin.vercel.app/",
+      githubClient: "https://github.com/tanimahamed07/TechLand.git",
+      githubServer: "https://github.com/tanimahamed07/techland-backend.git",
       image: techlandImg,
     },
     {
@@ -122,8 +122,8 @@ export default function ProjectSection() {
         "Context Api",
       ],
       liveLink: "https://artify-two-liart.vercel.app/",
-      githubClient: "https://github.com/tanimahamed07/assignment-11-frontend",
-      githubServer: "https://github.com/tanimahamed07/assignment-11-backend",
+      githubClient: "https://github.com/tanimahamed07/Artify-Client.git",
+      githubServer: "https://github.com/tanimahamed07/Artify-Backend.git",
       image: artifyImg,
     },
     {
@@ -140,9 +140,10 @@ export default function ProjectSection() {
         "Firebase Auth",
         "Context Api",
       ],
-      liveLink: "https://lonelink1.netlify.app/",
-      githubClient: "https://github.com/tanimahamed07/loanlink-client",
-      githubServer: "https://github.com/tanimahamed07/loanlink-server",
+      liveLink: "https://assignment-11-frontend.vercel.app/",
+      githubClient: "https://github.com/tanimahamed07/Loan_Link.git",
+      githubServer:
+        "https://github.com/tanimahamed07/assignment-11-backend.git",
       image: loanLinkImg,
     },
   ];
@@ -250,14 +251,14 @@ export default function ProjectSection() {
 
                 {/* Buttons */}
                 <motion.div
-                  className="flex flex-wrap gap-4"
+                  className="flex gap-3"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
                   <motion.a
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-black hover:bg-gray-800 rounded-lg transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-gray-900 bg-white border-2 border-gray-900 hover:bg-gray-900 hover:text-white rounded-lg transition-all duration-300"
                     href={project.githubClient}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -265,10 +266,23 @@ export default function ProjectSection() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <FaGithub className="w-4 h-4" />
-                    <span>Code</span>
+                    <span>Client</span>
                   </motion.a>
+                  {project.githubServer && (
+                    <motion.a
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-gray-900 bg-white border-2 border-gray-900 hover:bg-gray-900 hover:text-white rounded-lg transition-all duration-300"
+                      href={project.githubServer}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <FaGithub className="w-4 h-4" />
+                      <span>Server</span>
+                    </motion.a>
+                  )}
                   <motion.a
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-gray-900 bg-white border-2 border-gray-900 hover:bg-gray-900 hover:text-white rounded-lg transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-black hover:bg-gray-800 rounded-lg transition-all duration-300"
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"

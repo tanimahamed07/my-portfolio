@@ -56,7 +56,7 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <p className="font-medium text-sm">© 2024 Copyright: Tanim Ahamed</p>
+        <p className="font-medium text-sm">© 2026 Copyright: Tanim Ahamed</p>
       </motion.aside>
     </footer>
   );
